@@ -1,3 +1,19 @@
 {
-  "presets": ["es2015", "stage-0", "react"]
+  "compact": false,
+  "presets": [
+    "es2015",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "babel-plugin-syntax-jsx",
+    "babel-plugin-inferno",
+    ["module-resolver", {
+        "root": ["."],
+        "alias": {
+            "react": "inferno-compat",
+            "react-dom": "inferno-compat"
+        }
+    }]
+  ]
 }

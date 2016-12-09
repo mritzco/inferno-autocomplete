@@ -1,11 +1,10 @@
-React Autocomplete
+Inferno Autocomplete
 ==================
 
-Accessible, extensible, Autocomplete for React.js.
+Accessible, extensible, Autocomplete for Inferno.js.
 
-[![Travis build status](http://img.shields.io/travis/reactjs/react-autocomplete.svg?style=flat)](https://travis-ci.org/reactjs/react-autocomplete/)
 
-Docs coming soon, for now just look at the `propTypes` and [examples](https://reactcommunity.org/react-autocomplete/) :)
+Docs coming soon, but for now here are some [examples](https://reactcommunity.org/react-autocomplete/) :)
 
 Trying to settle on the right API, and then focus hard on accessibility,
 there are a few missing bits right now.
@@ -13,17 +12,10 @@ there are a few missing bits right now.
 Stuff we need help with:
 
 - mobile support verification generally
-- default mobile styles/positioniong (you'll notice the styles are
+- default mobile styles/positioning (you'll notice the styles are
   pretty lean, on purpose, apps should style this however they'd like)
 - tests (eventually)
 
 # Tests!
 
-Run them:
-`npm test`
-
-Write them:
-`lib/__tests__/Autocomplete-test.js`
-
-Check your work:
-`npm run coverage`
+TBD
