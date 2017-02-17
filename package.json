@@ -1,6 +1,6 @@
 {
   "name": "inferno-autocomplete",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Accessible, extensible, Autocomplete for Inferno.js",
   "main": "./dist/inferno-autocomplete.js",
   "repository": {
