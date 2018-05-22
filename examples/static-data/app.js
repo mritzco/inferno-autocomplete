@@ -1,6 +1,8 @@
-import React from 'react'
-import DOM from 'react-dom'
-import { getStates, matchStateToTerm, sortStates, styles } from '../../lib/utils'
+import Component from 'inferno-component';
+import './Heading.css';
+import inferno from 'inferno'
+
+import { getStates, matchStateToTerm, sortStates } from '../../lib/utils'
 import Autocomplete from '../../lib/index'
 
 let App = React.createClass({
@@ -19,6 +21,8 @@ let App = React.createClass({
         <Autocomplete
           value={this.state.value}
           inputProps={{name: "US state", id: "states-autocomplete"}}
+          wrapperProps={{class:"wrapper", name:"wrapper"}}
+          menuStyle={{}}
           items={getStates()}
           getItemValue={(item) => item.name}
           shouldItemRender={matchStateToTerm}
@@ -27,7 +31,7 @@ let App = React.createClass({
           onSelect={value => this.setState({ value })}
           renderItem={(item, isHighlighted) => (
             <div
-              style={isHighlighted ? styles.highlightedItem : styles.item}
+              class={isHighlighted ? 'highlightedItem' : 'item'}
               key={item.abbr}
             >{item.name}</div>
           )}
